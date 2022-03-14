@@ -8,11 +8,11 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
 
+  
   getCategories(){
     return this.http.get('https://api.chucknorris.io/jokes/categories'); 
   }
-
-  getJokeWithCategories(){
-    
-  }
+//   getJokeWithCategories(){
+//     // return this.http.get(`https://api.chucknorris.io/jokes/random?category=${{category}}`); 
+//   }
 }
