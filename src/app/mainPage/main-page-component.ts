@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import {ApiService} from '../api.service'; 
 
 @Component({
-  selector: 'app-api-test',
+  selector: 'app-main-page',
   templateUrl: './main-page-component.html',
   styleUrls: ['./main-page-component.scss']
 })
 
-export class ApiTestComponent implements OnInit {
+export class MainPageComponent implements OnInit {
   jokeData: any[string]; 
   title!: string;
   imageUrl! : string; 
