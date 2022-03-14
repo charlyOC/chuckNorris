@@ -1,5 +1,6 @@
-<!-- <h1 *ngFor="let chuck of jokeData">{{ chuck }}</h1> -->
-<p>bonjour bonjour</p>
-<ul>
-    <li *ngFor="let chuck of jokeData">{{ chuck }}</li>
-</ul>
+<div class="body-main-page">
+    <div class="chucks" *ngFor="let chuck of jokeData">
+        <!-- <img *ngFor="let image of imageUrl" src="{{image}}" alt="image"> -->
+        <h2>{{ chuck }}</h2>
+    </div>
+</div>

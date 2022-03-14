@@ -11,7 +11,6 @@ import {ApiService} from '../api.service';
 export class MainPageComponent implements OnInit {
   jokeData: any[string]; 
   title!: string;
-  imageUrl! : string; 
   
   constructor(private api:ApiService) {}
 
@@ -19,6 +18,7 @@ export class MainPageComponent implements OnInit {
     this.api.getCategories().subscribe((data) => {
       this.jokeData = data; 
     })
+
   }
 
 }
