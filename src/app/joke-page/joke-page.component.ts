@@ -14,6 +14,7 @@ export class JokePageComponent implements OnInit {
   joke: any[string]; 
   httpClient: any;
   httpParams: any; 
+  router: any;
 
   constructor(private route: ActivatedRoute, private api: ApiService) { }
 
@@ -25,8 +26,24 @@ export class JokePageComponent implements OnInit {
       this.joke = joke; 
     })
   }
-
-
+  playSoundPunch() {
+    let audio = new Audio ();
+    audio.src = "../assets/punch.mp3"
+    audio.load();
+    audio.play();
+    setTimeout(function() {
+      location.reload();
+    }, 500);
+  }
+  playSoundCrowd() {
+    let audio = new Audio ();
+    audio.src = "../assets/crowd.mp3"
+    audio.load();
+    audio.play();
+    setTimeout(function() {
+      window.location.href='/';
+    }, 1500);
+  }
 }
 
 

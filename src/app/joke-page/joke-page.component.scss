@@ -1,0 +1,74 @@
+.page {
+    height: 100vh;
+    width: 100vw;
+    background-color: #05595B;
+}
+.container {
+    position: absolute;
+    opacity: 0.9;
+    background-image: url(https://static.cnews.fr/sites/default/files/2019_redaction/chuck1_5e676eb173713.gif);
+    background-size: cover;
+    background-position: center center;
+    left: 50%;
+    top: 50%;
+    height: 90%;
+    width: 90%;
+    background-color: #05595B;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    .wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 0;
+        h1 {
+            text-align: center;
+            color: #E2D784;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+
+        }
+        p { 
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            right: 0;
+            font-size: 35px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30%;
+            font-weight: 400;
+            background-color: #055a5b88;
+            color: #F5F5F5;
+        }
+        button {
+            position: absolute;
+            width: 150px;
+            text-align: center;
+            bottom: 20px;
+            font-size: 22px;
+            text-decoration: none;
+            color: #05595B;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            background-color: #E2D784;
+            &:nth-of-type(1) {
+                transform: translate(60%);
+            }
+            &:nth-of-type(2) {
+                transform: translate(-60%);
+            }
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

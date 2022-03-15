@@ -1,10 +1,15 @@
 <div class="page">
 
-    <div class="container">
-        <div class="wrap">
-            <p>{{joke.value}}</p>
-            <a href="">Reset</a>
-        </div>
+  <div class="container">
+    <div class="wrap">
+      <h1>{{joke.categories}}'s category</h1>
+      <p>{{joke.value}}</p>
+      <div class="button">
+        <button (click)="playSoundPunch()">Reset</button>
+        <button (click)="playSoundCrowd()">Accueil</button>
+      </div>
+
     </div>
+  </div>
 
 </div>
