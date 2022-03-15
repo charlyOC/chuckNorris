@@ -1,4 +1,5 @@
-<!-- <h1 *ngFor="let chuck of jokeData">{{ chuck }}</h1> -->
-<ul>
-    <li *ngFor="let chuck of jokeData">{{ chuck }}</li>
-</ul>
+<audio src="../../assets/walker.mp3" autoplay="autoplay" loop="loop"></audio>
+<div class="body-main-page">
+    <a class="chucks" *ngFor="let category of categories;" routerLink="{{category}}">
+        <span>{{ category }}</span></a>
+</div>

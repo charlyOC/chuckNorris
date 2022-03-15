@@ -1,23 +1,25 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from '../api.service'; 
 
+
 @Component({
-  selector: 'app-api-test',
+  selector: 'app-main-page',
   templateUrl: './main-page-component.html',
   styleUrls: ['./main-page-component.scss']
 })
 
-export class ApiTestComponent implements OnInit {
-  jokeData: any[string]; 
+export class MainPageComponent implements OnInit {
+  categories: any[string]; 
   title!: string;
-  imageUrl! : string; 
+  httpClient: any;
+  httpParams: any; 
   
   constructor(private api:ApiService) {}
 
   ngOnInit() {
-    this.api.getCategories().subscribe((data) => {
-      this.jokeData = data; 
+    this.api.getCategories().subscribe((category) => {
+      this.categories = category; 
     })
   }
 
