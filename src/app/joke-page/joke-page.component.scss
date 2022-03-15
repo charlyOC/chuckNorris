@@ -1,0 +1,45 @@
+.page {
+    background-color: #E2D784;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    position: absolute;
+    background-image: url(https://static.cnews.fr/sites/default/files/2019_redaction/chuck1_5e676eb173713.gif);
+    background-size: cover;
+    background-position: center center;
+    left: 50%;
+    top: 50%;
+    height: 90%;
+    width: 70%;
+    background-color: #05595B;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    .wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        p { 
+            font-size: 35px;
+            text-align: center;
+            padding: 0 10%;
+            padding-top: 35%;
+            font-weight: 700;
+            color: #F5F5F5;
+        }
+        a {
+            
+            font-size: 22px;
+            text-decoration: none;
+            color: #05595B;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            // display: block;
+            margin: 0 auto;
+            background-color: #E2D784;
+        }
+    }
+}

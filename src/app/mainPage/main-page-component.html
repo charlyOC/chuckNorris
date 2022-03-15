@@ -1,5 +1,13 @@
-<a class="body-main-page">
+<!-- <a class="body-main-page">
     <div class="chucks" *ngFor="let chuck of jokeData; let i = index " (click)="getValue(chuck)" >
         <h2 class="chuck_value">{{ chuck }}</h2>
     </div>
-</a>
+</a> -->
+<div class="body-main-page" *ngFor="let chuck of jokeData; let i = index">
+  <a class="chucks"[attr.href]="chuck">
+    <div class="chucks">
+      <h2 class="chuck_value">{{ chuck }}</h2>
+    </div>
+  </a>
+
+</div>
