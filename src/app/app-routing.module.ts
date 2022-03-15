@@ -1,8 +1,8 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet, Routes } from '@angular/router';
-import { MainPageComponent } from './mainPage/main-page-component';
 import { JokePageComponent } from './joke-page/joke-page.component';
+import { MainPageComponent } from './mainPage/main-page-component';
 
 
 

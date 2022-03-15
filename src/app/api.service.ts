@@ -12,7 +12,4 @@ export class ApiService {
   getCategories(){
     return this.http.get('https://api.chucknorris.io/jokes/categories'); 
   }
-//   getJokeWithCategories(){
-//     // return this.http.get(`https://api.chucknorris.io/jokes/random?category=${{category}}`); 
-//   }
 }
