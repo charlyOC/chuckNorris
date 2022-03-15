@@ -1,5 +1,6 @@
-<a class="body-main-page">
-    <div class="chucks" *ngFor="let chuck of jokeData; let i = index " (click)="getValue(chuck)" >
-        <h2 class="chuck_value">{{ chuck }}</h2>
-    </div>
-</a>
+<div class="body-main-page">
+    <a class="chucks" *ngFor="let category of categories;" routerLink="{{category}}">
+
+        <h2 class="chuck_value">{{ category }}</h2>
+    </a>
+</div>
