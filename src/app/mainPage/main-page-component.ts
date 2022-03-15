@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { findIndex } from 'rxjs';
 import {ApiService} from '../api.service'; 
 
 @Component({
@@ -21,4 +22,8 @@ export class MainPageComponent implements OnInit {
 
   }
 
+  getValue(c:any){
+    // console.log(document.getElementsByClassName('chucks'))
+    console.log(c);
+  }
 }

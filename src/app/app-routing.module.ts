@@ -8,7 +8,7 @@ import { JokePageComponent } from './joke-page/joke-page.component';
 
 const routes: Routes = [
   { path: '',  component: MainPageComponent},
-  { path: 'selected', component: JokePageComponent  },
+  { path: ':category', component: JokePageComponent  },
 ];
 @NgModule({
   declarations: [],
